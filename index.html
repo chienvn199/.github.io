@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Web GIF Ngộ Nghĩnh</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        header {
+            background-color: #ff6347;
+            padding: 20px 0;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .gif-container {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            perspective: 1000px;
+        }
+
+        .gif {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s;
+        }
+
+        .gif-container:hover .gif {
+            transform: rotateY(15deg) rotateX(15deg);
+        }
+
+        .gif-download {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        .gif-download:hover {
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Trang Web GIF Ngộ Nghĩnh</h1>
+        <p>Chọn và tải các GIF yêu thích của bạn!</p>
+    </header>
+
+    <div class="gallery">
+        <!-- Hình GIF sẽ được chèn ở đây -->
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/3o85xIOwphA9soaxqc/giphy.gif" alt="GIF 1" class="gif">
+            <a href="https://media.giphy.com/media/3o85xIOwphA9soaxqc/giphy.gif" class="gif-download" download>Download GIF</a>
+        </div>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/Ju7l5y3w3JY/giphy.gif" alt="GIF 2" class="gif">
+            <a href="https://media.giphy.com/media/Ju7l5y3w3JY/giphy.gif" class="gif-download" download>Download GIF</a>
+        </div>
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/l0HlQ7LBzk7mKjoZm/giphy.gif" alt="GIF 3" class="gif">
+            <a href="https://media.giphy.com/media/l0HlQ7LBzk7mKjoZm/giphy.gif" class="gif-download" download>Download GIF</a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Trang Web GIF Ngộ Nghĩnh. Tất cả các quyền đều được bảo lưu.</p>
+    </footer>
+</body>
+</html>
